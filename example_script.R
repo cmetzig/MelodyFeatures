@@ -1,5 +1,4 @@
-# MelodyFeatures
-R package for extraction of melody features from MIDI format
+# MelodyFeatures R package for extraction of melody features from MIDI format
 library(tuneR)
 library(MelodyFeatures)
 
@@ -9,8 +8,8 @@ if(!dir.exists(outdir)){dir.create(outdir)}
 
 f_all <- list.files(path1)
 features_all_files <- list()
-for(file1 in f_all){
-  
+#for(file1 in f_all){
+  file1=f_all[1]
   filen1=paste(path1, file1, sep="")
   
   lengths0 <- read_convert_output_midi(filen1)
@@ -47,7 +46,7 @@ for(file1 in f_all){
                     b_bpm)
   
   features_all_files <- cbind(features_all_files,all_features)
-} #loop over files
+#} #loop over files in f_all
 
 all_labels <- c(
   "song_name",
