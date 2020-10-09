@@ -2,6 +2,10 @@
 library(tuneR)
 library(MelodyFeatures)
 
+
+# make sure you set the working directory to the current directory! 
+# In the menu click Session -> choose working directory -> to Source file location
+
 path1="dir_midi_files/" #you shoud have unzipped a folder with example files. Otherwise, put here the name of a folder with midi files of your choice
 outdir="outdir_name" #this is the directory where we save the output files
 if(!dir.exists(outdir)){dir.create(outdir)}
