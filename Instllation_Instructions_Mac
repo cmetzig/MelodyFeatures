@@ -1,0 +1,27 @@
+
+###############################
+Please execute the following orders
+1) open in Browser
+https://github.com/cmetzig/MelodyFeatures
+
+2) green button download code (becomes a zip file)
+save in a directory (example: melody_dir) and unzip. It should generate a folder called MelodyFeatures-master.
+
+3) open Rstudio
+set the working directory by clicking Session -> Set Working Directory -> Choose Directory  -> melody_dir
+(this path should now appear in the top line of the console)
+
+4) type in the console the following comments, followed by enter
+
+install.packages("devtools")
+install.packages("tuneR")
+library(devtools)
+library(tuneR)
+install_local("MelodyFeatures-master/MelodyFeatures_1.0/MelodyFeatures")
+
+
+or, if it is the second attempt
+install_local("MelodyFeatures-master/MelodyFeatures_1.0/MelodyFeatures", force=TRUE)
+
+
+if the word DONE appears at the end, you were successful!

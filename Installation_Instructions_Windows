@@ -1,0 +1,45 @@
+
+
+
+
+
+###############################
+Please execute the following orders
+1) open in Browser
+https://github.com/cmetzig/MelodyFeatures
+
+2) green button download code (becomes a zip file)
+save in a directory (example: melody_dir) 
+
+
+3) 
+### for Windows ###
+install Rtools 
+https://cran.r-project.org/bin/windows/Rtools/
+
+4) open Rstudio
+type into the console (=lower right window) the following line:
+
+writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")
+
+and restart Rstudio.
+
+5) set the working directory by clicking Session -> Set Working Directory -> Choose Directory  -> melody_dir
+(this path should now appear in the top line of the console)
+
+6) type in the console the following comments, followed by enter
+install.packages("tuneR")
+
+7)
+install_local("MelodyFeatures-master/MelodyFeatures_1.0.tar.gz")
+
+
+or, if it does not work, unzip the folder und type the command
+install_local("MelodyFeatures-master/MelodyFeatures_1.0/MelodyFeatures")
+install_local("MelodyFeatures-master/MelodyFeatures_1.0.tar.gzforce=TRUE)
+
+
+if the word DONE appears at the end, you were successful!
+
+
+install_local("MelodyFeatures-master/MelodyFeatures_1.0.tar.gz")
